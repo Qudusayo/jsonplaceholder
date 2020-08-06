@@ -120,7 +120,7 @@ const RootQuery = new GraphQLObjectType({
             description: "All user comments",
             resolve(parent, args) {
                 return axios
-                    .get("http://localhost:5000/comments")
+                    .get("https://jsonplaceholder.typicode.com/comments")
                     .then((res) => res.data);
             },
         },
@@ -132,7 +132,7 @@ const RootQuery = new GraphQLObjectType({
             },
             resolve(parent, args) {
                 return axios
-                    .get(`http://localhost:5000/comments/${args.id}`)
+                    .get(`https://jsonplaceholder.typicode.com/comments/${args.id}`)
                     .then((res) => res.data);
             },
         },
@@ -141,7 +141,7 @@ const RootQuery = new GraphQLObjectType({
             description: "All albums",
             resolve(parent, args) {
                 return axios
-                    .get("http://localhost:5000/albums")
+                    .get("https://jsonplaceholder.typicode.com/albums")
                     .then((res) => res.data);
             },
         },
@@ -153,7 +153,7 @@ const RootQuery = new GraphQLObjectType({
             },
             resolve(parent, args) {
                 return axios
-                    .get(`http://localhost:5000/albums/${args.id}`)
+                    .get(`https://jsonplaceholder.typicode.com/albums/${args.id}`)
                     .then((res) => res.data);
             },
         },
@@ -162,7 +162,7 @@ const RootQuery = new GraphQLObjectType({
             description: "All posts",
             resolve(parent, args) {
                 return axios
-                    .get("http://localhost:5000/posts")
+                    .get("https://jsonplaceholder.typicode.com/posts")
                     .then((res) => res.data);
             },
         },
@@ -174,7 +174,7 @@ const RootQuery = new GraphQLObjectType({
             },
             resolve(parent, args) {
                 return axios
-                    .get(`http://localhost:5000/posts/${args.id}`)
+                    .get(`https://jsonplaceholder.typicode.com/posts/${args.id}`)
                     .then((res) => res.data);
             },
         },
@@ -183,7 +183,7 @@ const RootQuery = new GraphQLObjectType({
             description: "All users",
             resolve(parent, args) {
                 return axios
-                    .get("http://localhost:5000/users")
+                    .get("https://jsonplaceholder.typicode.com/users")
                     .then((res) => res.data);
             },
         },
@@ -195,7 +195,7 @@ const RootQuery = new GraphQLObjectType({
             },
             resolve(parent, args) {
                 return axios
-                    .get(`http://localhost:5000/users/${args.id}`)
+                    .get(`https://jsonplaceholder.typicode.com/users/${args.id}`)
                     .then((res) => res.data);
             },
         },
@@ -204,7 +204,7 @@ const RootQuery = new GraphQLObjectType({
             description: "All todos",
             resolve(parent, args) {
                 return axios
-                    .get("http://localhost:5000/todos")
+                    .get("https://jsonplaceholder.typicode.com/todos")
                     .then((res) => res.data);
             },
         },
@@ -216,7 +216,7 @@ const RootQuery = new GraphQLObjectType({
             },
             resolve(parent, args) {
                 return axios
-                    .get(`http://localhost:5000/todos/${args.id}`)
+                    .get(`https://jsonplaceholder.typicode.com/todos/${args.id}`)
                     .then((res) => res.data);
             },
         },
@@ -225,7 +225,7 @@ const RootQuery = new GraphQLObjectType({
             description: "All photos",
             resolve(parent, args) {
                 return axios
-                    .get("http://localhost:5000/photos")
+                    .get("https://jsonplaceholder.typicode.com/photos")
                     .then((res) => res.data);
             },
         },
@@ -237,7 +237,7 @@ const RootQuery = new GraphQLObjectType({
             },
             resolve(parent, args) {
                 return axios
-                    .get(`http://localhost:5000/photos/${args.id}`)
+                    .get(`https://jsonplaceholder.typicode.com/photos/${args.id}`)
                     .then((res) => res.data);
             },
         },
