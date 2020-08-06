@@ -1,0 +1,1 @@
+<h1 align="center">JSONPLACEHOLDER GRAPHQL UI</h1>

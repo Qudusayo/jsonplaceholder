@@ -1,0 +1,24 @@
+{
+  "name": "jsonplaceholder",
+  "version": "1.0.0",
+  "description": "jsonplaceholder fake restful API GraphQL practice app",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Graphiql",
+    "Graphql",
+    "jsonplaceholder",
+    "fakerestfulapi"
+  ],
+  "author": "Qudusayo",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0"
+  }
+}
